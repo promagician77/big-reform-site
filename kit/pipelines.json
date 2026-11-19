@@ -1,0 +1,137 @@
+{
+  "object": "deals",
+  "pipelines": [
+    {
+      "label": "Speaking engagements",
+      "displayOrder": 0,
+      "stages": [
+        {
+          "label": "Researching",
+          "metadata": {
+            "probability": "0.05",
+            "isClosed": "false"
+          },
+          "displayOrder": 0
+        },
+        {
+          "label": "First contact",
+          "metadata": {
+            "probability": "0.1",
+            "isClosed": "false"
+          },
+          "displayOrder": 1
+        },
+        {
+          "label": "Conversation",
+          "metadata": {
+            "probability": "0.25",
+            "isClosed": "false"
+          },
+          "displayOrder": 2
+        },
+        {
+          "label": "Proposal sent",
+          "metadata": {
+            "probability": "0.4",
+            "isClosed": "false"
+          },
+          "displayOrder": 3
+        },
+        {
+          "label": "Date on hold",
+          "metadata": {
+            "probability": "0.6",
+            "isClosed": "false"
+          },
+          "displayOrder": 4
+        },
+        {
+          "label": "Contract out",
+          "metadata": {
+            "probability": "0.8",
+            "isClosed": "false"
+          },
+          "displayOrder": 5
+        },
+        {
+          "label": "Booked: contract and deposit",
+          "metadata": {
+            "probability": "1",
+            "isClosed": "true"
+          },
+          "displayOrder": 6
+        },
+        {
+          "label": "Lost",
+          "metadata": {
+            "probability": "0",
+            "isClosed": "true"
+          },
+          "displayOrder": 7
+        }
+      ]
+    },
+    {
+      "label": "Institutional contracts",
+      "displayOrder": 1,
+      "stages": [
+        {
+          "label": "Researching",
+          "metadata": {
+            "probability": "0.05",
+            "isClosed": "false"
+          },
+          "displayOrder": 0
+        },
+        {
+          "label": "Discovery meeting",
+          "metadata": {
+            "probability": "0.15",
+            "isClosed": "false"
+          },
+          "displayOrder": 1
+        },
+        {
+          "label": "Program scoped",
+          "metadata": {
+            "probability": "0.3",
+            "isClosed": "false"
+          },
+          "displayOrder": 2
+        },
+        {
+          "label": "Proposal or bid submitted",
+          "metadata": {
+            "probability": "0.5",
+            "isClosed": "false"
+          },
+          "displayOrder": 3
+        },
+        {
+          "label": "Vendor registration and procurement",
+          "metadata": {
+            "probability": "0.7",
+            "isClosed": "false"
+          },
+          "displayOrder": 4
+        },
+        {
+          "label": "Contract signed",
+          "metadata": {
+            "probability": "1",
+            "isClosed": "true"
+          },
+          "displayOrder": 5
+        },
+        {
+          "label": "Lost or no award",
+          "metadata": {
+            "probability": "0",
+            "isClosed": "true"
+          },
+          "displayOrder": 6
+        }
+      ]
+    }
+  ]
+}

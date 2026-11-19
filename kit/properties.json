@@ -1,0 +1,456 @@
+{
+  "group": {
+    "name": "big_reform",
+    "label": "Big Reform booking"
+  },
+  "companies": [
+    {
+      "groupName": "big_reform",
+      "name": "buying_unit_id",
+      "label": "Buying unit ID",
+      "type": "string",
+      "fieldType": "text",
+      "hasUniqueValue": true,
+      "description": "One ID per office that can book or buy, e.g. tdcj-coffield. Used as the import key instead of the web domain."
+    },
+    {
+      "groupName": "big_reform",
+      "name": "parent_agency",
+      "label": "Parent agency",
+      "type": "string",
+      "fieldType": "text",
+      "description": "The agency or institution the unit belongs to, e.g. Texas Department of Criminal Justice."
+    },
+    {
+      "groupName": "big_reform",
+      "name": "unit_type",
+      "label": "Unit type",
+      "type": "string",
+      "fieldType": "text"
+    },
+    {
+      "groupName": "big_reform",
+      "name": "audience",
+      "label": "Audience",
+      "type": "enumeration",
+      "fieldType": "select",
+      "options": [
+        {
+          "value": "incarcerated_adults",
+          "label": "Incarcerated adults",
+          "displayOrder": 0,
+          "hidden": false
+        },
+        {
+          "value": "youth",
+          "label": "Youth",
+          "displayOrder": 1,
+          "hidden": false
+        },
+        {
+          "value": "returning_citizens",
+          "label": "Returning citizens",
+          "displayOrder": 2,
+          "hidden": false
+        },
+        {
+          "value": "probation",
+          "label": "People on probation",
+          "displayOrder": 3,
+          "hidden": false
+        },
+        {
+          "value": "students",
+          "label": "Students and faculty",
+          "displayOrder": 4,
+          "hidden": false
+        },
+        {
+          "value": "agency_staff",
+          "label": "Agency staff and partners",
+          "displayOrder": 5,
+          "hidden": false
+        },
+        {
+          "value": "donors",
+          "label": "Program participants and donors",
+          "displayOrder": 6,
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "groupName": "big_reform",
+      "name": "miles_from_dallas",
+      "label": "Miles from Dallas",
+      "type": "number",
+      "fieldType": "number",
+      "description": "Straight-line miles from downtown Dallas (ZIP 75201), from ZIP centroids. Driving distance is longer."
+    },
+    {
+      "groupName": "big_reform",
+      "name": "within_travel_range",
+      "label": "Within travel range",
+      "type": "enumeration",
+      "fieldType": "booleancheckbox",
+      "options": [
+        {
+          "value": "true",
+          "label": "Yes",
+          "displayOrder": 0,
+          "hidden": false
+        },
+        {
+          "value": "false",
+          "label": "No",
+          "displayOrder": 1,
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "groupName": "big_reform",
+      "name": "deal_fit",
+      "label": "Deal fit",
+      "type": "enumeration",
+      "fieldType": "select",
+      "options": [
+        {
+          "value": "speaking",
+          "label": "Speaking engagement",
+          "displayOrder": 0,
+          "hidden": false
+        },
+        {
+          "value": "contract",
+          "label": "Institutional contract",
+          "displayOrder": 1,
+          "hidden": false
+        },
+        {
+          "value": "both",
+          "label": "Both",
+          "displayOrder": 2,
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "groupName": "big_reform",
+      "name": "source_url",
+      "label": "Source URL",
+      "type": "string",
+      "fieldType": "text"
+    },
+    {
+      "groupName": "big_reform",
+      "name": "last_verified",
+      "label": "Last verified",
+      "type": "date",
+      "fieldType": "date"
+    }
+  ],
+  "contacts": [
+    {
+      "groupName": "big_reform",
+      "name": "buyer_role",
+      "label": "Buyer role",
+      "type": "enumeration",
+      "fieldType": "select",
+      "options": [
+        {
+          "value": "warden",
+          "label": "Warden or superintendent",
+          "displayOrder": 0,
+          "hidden": false
+        },
+        {
+          "value": "programs",
+          "label": "Programs or rehabilitation lead",
+          "displayOrder": 1,
+          "hidden": false
+        },
+        {
+          "value": "reentry",
+          "label": "Re-entry coordinator",
+          "displayOrder": 2,
+          "hidden": false
+        },
+        {
+          "value": "chaplain",
+          "label": "Chaplain",
+          "displayOrder": 3,
+          "hidden": false
+        },
+        {
+          "value": "education",
+          "label": "Education or student affairs",
+          "displayOrder": 4,
+          "hidden": false
+        },
+        {
+          "value": "event_planner",
+          "label": "Event or conference planner",
+          "displayOrder": 5,
+          "hidden": false
+        },
+        {
+          "value": "procurement",
+          "label": "Procurement or contracts",
+          "displayOrder": 6,
+          "hidden": false
+        },
+        {
+          "value": "other",
+          "label": "Other",
+          "displayOrder": 7,
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "groupName": "big_reform",
+      "name": "lead_source_detail",
+      "label": "Lead source detail",
+      "type": "enumeration",
+      "fieldType": "select",
+      "options": [
+        {
+          "value": "research_list",
+          "label": "Research list",
+          "displayOrder": 0,
+          "hidden": false
+        },
+        {
+          "value": "referral",
+          "label": "Referral",
+          "displayOrder": 1,
+          "hidden": false
+        },
+        {
+          "value": "inbound_form",
+          "label": "Website or speaker page",
+          "displayOrder": 2,
+          "hidden": false
+        },
+        {
+          "value": "event_met",
+          "label": "Met at an event",
+          "displayOrder": 3,
+          "hidden": false
+        },
+        {
+          "value": "marblism",
+          "label": "Found by Marblism",
+          "displayOrder": 4,
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "groupName": "big_reform",
+      "name": "next_touch_owner",
+      "label": "Next touch owner",
+      "type": "enumeration",
+      "fieldType": "select",
+      "options": [
+        {
+          "value": "hubspot",
+          "label": "HubSpot (sequence or task)",
+          "displayOrder": 0,
+          "hidden": false
+        },
+        {
+          "value": "keidrain",
+          "label": "Keidrain, personally",
+          "displayOrder": 1,
+          "hidden": false
+        },
+        {
+          "value": "paused",
+          "label": "Paused: replied or booked",
+          "displayOrder": 2,
+          "hidden": false
+        }
+      ],
+      "description": "Exactly one tool owns the next follow-up, so Marblism and HubSpot never both chase the same person."
+    }
+  ],
+  "deals": [
+    {
+      "groupName": "big_reform",
+      "name": "deal_kind",
+      "label": "Deal kind",
+      "type": "enumeration",
+      "fieldType": "select",
+      "options": [
+        {
+          "value": "speaking",
+          "label": "Speaking engagement",
+          "displayOrder": 0,
+          "hidden": false
+        },
+        {
+          "value": "contract",
+          "label": "Institutional contract",
+          "displayOrder": 1,
+          "hidden": false
+        }
+      ],
+      "description": "Lets one pipeline hold both kinds of deal on HubSpot Free, which has no custom pipelines."
+    },
+    {
+      "groupName": "big_reform",
+      "name": "event_date",
+      "label": "Event date",
+      "type": "date",
+      "fieldType": "date"
+    },
+    {
+      "groupName": "big_reform",
+      "name": "session_format",
+      "label": "Session format",
+      "type": "enumeration",
+      "fieldType": "select",
+      "options": [
+        {
+          "value": "keynote",
+          "label": "Keynote",
+          "displayOrder": 0,
+          "hidden": false
+        },
+        {
+          "value": "workshop",
+          "label": "Workshop",
+          "displayOrder": 1,
+          "hidden": false
+        },
+        {
+          "value": "series",
+          "label": "Multi-session program",
+          "displayOrder": 2,
+          "hidden": false
+        },
+        {
+          "value": "panel",
+          "label": "Panel",
+          "displayOrder": 3,
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "groupName": "big_reform",
+      "name": "session_minutes",
+      "label": "Session minutes",
+      "type": "number",
+      "fieldType": "number"
+    },
+    {
+      "groupName": "big_reform",
+      "name": "speaking_fee",
+      "label": "Speaking fee",
+      "type": "number",
+      "fieldType": "number"
+    },
+    {
+      "groupName": "big_reform",
+      "name": "deposit_received",
+      "label": "Deposit received",
+      "type": "enumeration",
+      "fieldType": "booleancheckbox",
+      "options": [
+        {
+          "value": "true",
+          "label": "Yes",
+          "displayOrder": 0,
+          "hidden": false
+        },
+        {
+          "value": "false",
+          "label": "No",
+          "displayOrder": 1,
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "groupName": "big_reform",
+      "name": "procurement_route",
+      "label": "Procurement route",
+      "type": "enumeration",
+      "fieldType": "select",
+      "options": [
+        {
+          "value": "direct_invoice",
+          "label": "Direct invoice",
+          "displayOrder": 0,
+          "hidden": false
+        },
+        {
+          "value": "purchase_order",
+          "label": "Purchase order",
+          "displayOrder": 1,
+          "hidden": false
+        },
+        {
+          "value": "bid_rfp",
+          "label": "Bid or RFP",
+          "displayOrder": 2,
+          "hidden": false
+        },
+        {
+          "value": "grant_funded",
+          "label": "Grant-funded",
+          "displayOrder": 3,
+          "hidden": false
+        },
+        {
+          "value": "donor_sponsored",
+          "label": "Donor-sponsored",
+          "displayOrder": 4,
+          "hidden": false
+        }
+      ]
+    },
+    {
+      "groupName": "big_reform",
+      "name": "fiscal_year_start",
+      "label": "Buyer fiscal year starts",
+      "type": "enumeration",
+      "fieldType": "select",
+      "options": [
+        {
+          "value": "jan",
+          "label": "January",
+          "displayOrder": 0,
+          "hidden": false
+        },
+        {
+          "value": "jul",
+          "label": "July",
+          "displayOrder": 1,
+          "hidden": false
+        },
+        {
+          "value": "sep",
+          "label": "September",
+          "displayOrder": 2,
+          "hidden": false
+        },
+        {
+          "value": "oct",
+          "label": "October",
+          "displayOrder": 3,
+          "hidden": false
+        },
+        {
+          "value": "unknown",
+          "label": "Unknown",
+          "displayOrder": 4,
+          "hidden": false
+        }
+      ]
+    }
+  ]
+}

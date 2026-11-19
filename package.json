@@ -1,0 +1,9 @@
+{
+  "name": "big-reform-booking-desk-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static demo page: HubSpot booking desk for paid speaking and institutional contracts. No build step.",
+  "scripts": {
+    "start": "node init && npx --yes serve ."
+  }
+}

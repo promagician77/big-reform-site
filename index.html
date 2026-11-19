@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Big Reform booking desk: a working HubSpot demo</title>
+<meta name="description" content="A HubSpot booking system for paid speaking and institutional contracts, built on 27 real buyers near Dallas.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/zilla-slab-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/public-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <p class="kicker">Booking desk for Big Reform, a working demo</p>
+</header>
+<main id="main">
+  <section class="hero" aria-labelledby="h1">
+    <h1 id="h1">27 offices near Dallas that could book Big Reform. Imported into HubSpot the default way, 19 of them never arrive.</h1>
+    <p class="lede">Every row is a real prison, jail, juvenile facility, county office, university center or re-entry nonprofit inside the 120-mile travel range, taken from public pages on November 19, 2026. The 10 state prison units all use one web address, <code>tdcj.texas.gov</code>, and HubSpot matches companies on that address.</p>
+    <div class="switch" role="group" aria-label="How the import matches rows">
+      <button type="button" class="mode" data-mode="domain" data-records="8" data-rejected="19" aria-pressed="true">Match on web domain <span>HubSpot's default</span></button>
+      <button type="button" class="mode" data-mode="unit" data-records="27" data-rejected="0" aria-pressed="false">Match on buying-unit ID <span>this kit</span></button>
+    </div>
+    <p class="tally" aria-live="polite"><strong data-count="records">8</strong> company records, <strong data-count="rejected">19</strong> rows rejected</p>
+    <p class="tally-note">Counts come from a model of HubSpot's published import rules, run on this list: a domain repeated in one file fails as <code>DUPLICATE_ALTERNATE_ID</code>, and only its first row gets in. Matching on a unique buying-unit ID lets rows share a domain.</p>
+    <h2 class="sr-only">The 27 units, by organization</h2>
+    <ul class="agencies" data-mode="domain">
+      <li class="agency">
+        <div class="agency-head"><h3>Texas Department of Criminal Justice</h3><code>tdcj.texas.gov</code><span class="agency-count">10 units</span></div>
+        <ul class="units">
+          <li class="unit" data-kept-domain="true">
+            <span class="unit-name">Hutchins State Jail</span>
+            <span class="unit-meta">Dallas, 8.3 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 2">In HubSpot as its own record</span>
+          </li>
+          <li class="unit" data-kept-domain="false">
+            <span class="unit-name">Cole State Jail</span>
+            <span class="unit-meta">Bonham, 65.3 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 3">Not imported: DUPLICATE_ALTERNATE_ID, line 3</span>
+          </li>
+          <li class="unit" data-kept-domain="false">
+            <span class="unit-name">Johnston Unit (SAFPF)</span>
+            <span class="unit-meta">Winnsboro, 89.3 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 4">Not imported: DUPLICATE_ALTERNATE_ID, line 4</span>
+          </li>
+          <li class="unit" data-kept-domain="false">
+            <span class="unit-name">Coffield Unit</span>
+            <span class="unit-meta">Tennessee Colony, 86.8 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 5">Not imported: DUPLICATE_ALTERNATE_ID, line 5</span>
+          </li>
+          <li class="unit" data-kept-domain="false">
+            <span class="unit-name">Beto Unit</span>
+            <span class="unit-meta">Tennessee Colony, 86.8 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 6">Not imported: DUPLICATE_ALTERNATE_ID, line 6</span>
+          </li>
+          <li class="unit" data-kept-domain="false">
+            <span class="unit-name">Michael Unit</span>
+            <span class="unit-meta">Tennessee Colony, 86.8 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 7">Not imported: DUPLICATE_ALTERNATE_ID, line 7</span>
+          </li>
+          <li class="unit" data-kept-domain="false">
+            <span class="unit-name">Gurney Transfer Facility</span>
+            <span class="unit-meta">Palestine, 98 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 8">Not imported: DUPLICATE_ALTERNATE_ID, line 8</span>
+          </li>
+          <li class="unit" data-kept-domain="false">
+            <span class="unit-name">Powledge Unit</span>
+            <span class="unit-meta">Palestine, 98 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 9">Not imported: DUPLICATE_ALTERNATE_ID, line 9</span>
+          </li>
+          <li class="unit" data-kept-domain="false">
+            <span class="unit-name">Boyd Unit</span>
+            <span class="unit-meta">Teague, 85.7 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 10">Not imported: DUPLICATE_ALTERNATE_ID, line 10</span>
+          </li>
+          <li class="unit" data-kept-domain="false">
+            <span class="unit-name">Estes Unit</span>
+            <span class="unit-meta">Venus, about 30 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 11">Not imported: DUPLICATE_ALTERNATE_ID, line 11</span>
+          </li>
+        </ul>
+      </li>
+      <li class="agency">
+        <div class="agency-head"><h3>Federal Bureau of Prisons</h3><code>bop.gov</code><span class="agency-count">3 units</span></div>
+        <ul class="units">
+          <li class="unit" data-kept-domain="true">
+            <span class="unit-name">FCI Seagoville</span>
+            <span class="unit-meta">Seagoville, 17.2 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 12">In HubSpot as its own record</span>
+          </li>
+          <li class="unit" data-kept-domain="false">
+            <span class="unit-name">FMC Carswell</span>
+            <span class="unit-meta">Fort Worth, 30.3 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 13">Not imported: DUPLICATE_ALTERNATE_ID, line 13</span>
+          </li>
+          <li class="unit" data-kept-domain="false">
+            <span class="unit-name">FMC Fort Worth</span>
+            <span class="unit-meta">Fort Worth, 27.8 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 14">Not imported: DUPLICATE_ALTERNATE_ID, line 14</span>
+          </li>
+        </ul>
+      </li>
+      <li class="agency">
+        <div class="agency-head"><h3>Texas Juvenile Justice Department</h3><code>tjjd.texas.gov</code><span class="agency-count">2 units</span></div>
+        <ul class="units">
+          <li class="unit" data-kept-domain="true">
+            <span class="unit-name">Gainesville State School</span>
+            <span class="unit-meta">Gainesville, 63.1 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 15">In HubSpot as its own record</span>
+          </li>
+          <li class="unit" data-kept-domain="false">
+            <span class="unit-name">McLennan County State Juvenile Correctional Facility</span>
+            <span class="unit-meta">Mart, about 86 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 16">Not imported: DUPLICATE_ALTERNATE_ID, line 16</span>
+          </li>
+        </ul>
+      </li>
+      <li class="agency">
+        <div class="agency-head"><h3>Dallas County</h3><code>dallascounty.org</code><span class="agency-count">5 units</span></div>
+        <ul class="units">
+          <li class="unit" data-kept-domain="true">
+            <span class="unit-name">Dallas County Juvenile Department</span>
+            <span class="unit-meta">Dallas, 3.9 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 17">In HubSpot as its own record</span>
+          </li>
+          <li class="unit" data-kept-domain="false">
+            <span class="unit-name">Dallas County Sheriff's Office, Inmate Programs</span>
+            <span class="unit-meta">Dallas</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 18">Not imported: DUPLICATE_ALTERNATE_ID, line 18</span>
+          </li>
+          <li class="unit" data-kept-domain="false">
+            <span class="unit-name">Dallas County Criminal Justice Department</span>
+            <span class="unit-meta">Dallas</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 19">Not imported: DUPLICATE_ALTERNATE_ID, line 19</span>
+          </li>
+          <li class="unit" data-kept-domain="false">
+            <span class="unit-name">Dallas County CJAB Re-Entry Subcommittee</span>
+            <span class="unit-meta">Dallas</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 20">Not imported: DUPLICATE_ALTERNATE_ID, line 20</span>
+          </li>
+          <li class="unit" data-kept-domain="false">
+            <span class="unit-name">Dallas County Community Supervision and Corrections</span>
+            <span class="unit-meta">Dallas</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 21">Not imported: DUPLICATE_ALTERNATE_ID, line 21</span>
+          </li>
+        </ul>
+      </li>
+      <li class="agency">
+        <div class="agency-head"><h3>Tarrant County</h3><code>tarrantcountytx.gov</code><span class="agency-count">3 units</span></div>
+        <ul class="units">
+          <li class="unit" data-kept-domain="true">
+            <span class="unit-name">Tarrant County Juvenile Services</span>
+            <span class="unit-meta">Fort Worth, about 31 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 22">In HubSpot as its own record</span>
+          </li>
+          <li class="unit" data-kept-domain="false">
+            <span class="unit-name">Tarrant County Community Supervision and Corrections</span>
+            <span class="unit-meta">Fort Worth, 27.8 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 23">Not imported: DUPLICATE_ALTERNATE_ID, line 23</span>
+          </li>
+          <li class="unit" data-kept-domain="false">
+            <span class="unit-name">Tarrant County Re-Entry Program</span>
+            <span class="unit-meta">Fort Worth, 27.8 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 24">Not imported: DUPLICATE_ALTERNATE_ID, line 24</span>
+          </li>
+        </ul>
+      </li>
+      <li class="agency">
+        <div class="agency-head"><h3>Southern Methodist University</h3><code>smu.edu</code><span class="agency-count">2 units</span></div>
+        <ul class="units">
+          <li class="unit" data-kept-domain="true">
+            <span class="unit-name">SMU Deason Criminal Justice Reform Center</span>
+            <span class="unit-meta">Dallas, 2.2 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 25">In HubSpot as its own record</span>
+          </li>
+          <li class="unit" data-kept-domain="false">
+            <span class="unit-name">SMU Dedman Law Criminal Justice Reform Clinic</span>
+            <span class="unit-meta">Dallas, 2.2 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 26">Not imported: DUPLICATE_ALTERNATE_ID, line 26</span>
+          </li>
+        </ul>
+      </li>
+      <li class="agency">
+        <div class="agency-head"><h3>Prison Entrepreneurship Program</h3><code>pep.org</code><span class="agency-count">1 unit</span></div>
+        <ul class="units">
+          <li class="unit" data-kept-domain="true">
+            <span class="unit-name">Prison Entrepreneurship Program</span>
+            <span class="unit-meta">Richardson, 12.6 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 27">In HubSpot as its own record</span>
+          </li>
+        </ul>
+      </li>
+      <li class="agency">
+        <div class="agency-head"><h3>Unlocking DOORS</h3><code>unlockingdoors.org</code><span class="agency-count">1 unit</span></div>
+        <ul class="units">
+          <li class="unit" data-kept-domain="true">
+            <span class="unit-name">Unlocking DOORS</span>
+            <span class="unit-meta">Dallas, 9.4 mi</span>
+            <span class="unit-status" data-ok="In HubSpot as its own record" data-bad="Not imported: DUPLICATE_ALTERNATE_ID, line 28">In HubSpot as its own record</span>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="where">
+    <h2 id="where">Where they are</h2>
+    <p>17 of the 27 are in Dallas–Fort Worth. The farthest are about 98 miles out in a straight line, so the drive is longer. Every record carries its distance, so a list view in HubSpot can show only what fits the travel range.</p>
+    <figure class="figure"><div class="strip-wrap" tabindex="0" role="region" aria-label="Distance chart, scrolls sideways on small screens"><svg class="strip" viewBox="0 0 960 250" role="img" aria-labelledby="strip-t strip-d">
+  <title id="strip-t">Straight-line miles from downtown Dallas for the 27 units</title>
+  <desc id="strip-d">17 units are within 40 miles in Dallas–Fort Worth; the farthest are Gainesville at about 63 miles, Bonham at about 65 miles, Teague at about 86 miles, Mart at about 86 miles, Tennessee Colony (3) at about 87 miles, Winnsboro at about 89 miles, Palestine (2) at about 98 miles.</desc>
+  <rect class="limit" x="935" y="18" width="2" height="172"/>
+  <text class="limit-label" x="930" y="16" text-anchor="end">120-mile travel range</text>
+  <line class="axis" x1="40" y1="190" x2="936" y2="190"/><g class="tick"><line x1="40" y1="190" x2="40" y2="196"/><text x="40" y="212">0</text></g><g class="tick"><line x1="189.33333333333331" y1="190" x2="189.33333333333331" y2="196"/><text x="189.33333333333331" y="212">20</text></g><g class="tick"><line x1="338.66666666666663" y1="190" x2="338.66666666666663" y2="196"/><text x="338.66666666666663" y="212">40</text></g><g class="tick"><line x1="488" y1="190" x2="488" y2="196"/><text x="488" y="212">60</text></g><g class="tick"><line x1="637.3333333333333" y1="190" x2="637.3333333333333" y2="196"/><text x="637.3333333333333" y="212">80</text></g><g class="tick"><line x1="786.6666666666667" y1="190" x2="786.6666666666667" y2="196"/><text x="786.6666666666667" y="212">100</text></g><g class="tick"><line x1="936" y1="190" x2="936" y2="196"/><text x="936" y="212">120</text></g>
+  <text class="axis-label" x="40" y="244">Miles from downtown Dallas, straight line</text>
+  <g class="metro"><text x="40" y="81">Dallas–Fort Worth (17)</text></g>
+  <circle class="dot" cx="40.0" cy="181.0" r="7"><title>Dallas County Sheriff's Office, Inmate Programs: 0 mi</title></circle><circle class="dot" cx="40.0" cy="164.0" r="7"><title>Dallas County Criminal Justice Department: 0 mi</title></circle><circle class="dot" cx="40.0" cy="147.0" r="7"><title>Dallas County CJAB Re-Entry Subcommittee: 0 mi</title></circle><circle class="dot" cx="40.0" cy="130.0" r="7"><title>Dallas County Community Supervision and Corrections: 0 mi</title></circle><circle class="dot" cx="56.4" cy="113.0" r="7"><title>SMU Deason Criminal Justice Reform Center: 2.2 mi</title></circle><circle class="dot" cx="56.4" cy="96.0" r="7"><title>SMU Dedman Law Criminal Justice Reform Clinic: 2.2 mi</title></circle><circle class="dot" cx="69.1" cy="181.0" r="7"><title>Dallas County Juvenile Department: 3.9 mi</title></circle><circle class="dot" cx="102.0" cy="181.0" r="7"><title>Hutchins State Jail: 8.3 mi</title></circle><circle class="dot" cx="110.2" cy="164.0" r="7"><title>Unlocking DOORS: 9.4 mi</title></circle><circle class="dot" cx="134.1" cy="181.0" r="7"><title>Prison Entrepreneurship Program: 12.6 mi</title></circle><circle class="dot" cx="168.4" cy="181.0" r="7"><title>FCI Seagoville: 17.2 mi</title></circle><circle class="dot" cx="247.6" cy="181.0" r="7"><title>FMC Fort Worth: 27.8 mi</title></circle><circle class="dot" cx="247.6" cy="164.0" r="7"><title>Tarrant County Community Supervision and Corrections: 27.8 mi</title></circle><circle class="dot" cx="247.6" cy="147.0" r="7"><title>Tarrant County Re-Entry Program: 27.8 mi</title></circle><circle class="dot" cx="266.2" cy="181.0" r="7"><title>FMC Carswell: 30.3 mi</title></circle><circle class="dot" cx="267.0" cy="164.0" r="7"><title>Estes Unit: 30.4 mi</title></circle><circle class="dot" cx="267.7" cy="147.0" r="7"><title>Tarrant County Juvenile Services: 30.5 mi</title></circle><circle class="dot" cx="511.1" cy="181.0" r="7"><title>Gainesville State School: 63.1 mi</title></circle><circle class="dot" cx="527.6" cy="164.0" r="7"><title>Cole State Jail: 65.3 mi</title></circle><circle class="dot" cx="679.9" cy="181.0" r="7"><title>Boyd Unit: 85.7 mi</title></circle><circle class="dot" cx="682.1" cy="164.0" r="7"><title>McLennan County State Juvenile Correctional Facility: 86 mi</title></circle><circle class="dot" cx="688.1" cy="147.0" r="7"><title>Coffield Unit: 86.8 mi</title></circle><circle class="dot" cx="688.1" cy="130.0" r="7"><title>Beto Unit: 86.8 mi</title></circle><circle class="dot" cx="688.1" cy="113.0" r="7"><title>Michael Unit: 86.8 mi</title></circle><circle class="dot" cx="706.8" cy="181.0" r="7"><title>Johnston Unit (SAFPF): 89.3 mi</title></circle><circle class="dot" cx="771.7" cy="181.0" r="7"><title>Gurney Transfer Facility: 98 mi</title></circle><circle class="dot" cx="771.7" cy="164.0" r="7"><title>Powledge Unit: 98 mi</title></circle>
+  <g class="callout"><line x1="778.7" y1="40" x2="778.7" y2="154.0"/><text x="778.7" y="36" text-anchor="end">Palestine (2)</text></g><g class="callout"><line x1="713.8" y1="58" x2="713.8" y2="171.0"/><text x="713.8" y="54" text-anchor="end">Winnsboro</text></g><g class="callout"><line x1="695.1" y1="76" x2="695.1" y2="103.0"/><text x="695.1" y="72" text-anchor="end">Tennessee Colony (3)</text></g><g class="callout"><line x1="689.1" y1="94" x2="689.1" y2="154.0"/><text x="689.1" y="90" text-anchor="end">Mart</text></g><g class="callout"><line x1="686.9" y1="112" x2="686.9" y2="171.0"/><text x="686.9" y="108" text-anchor="end">Teague</text></g><g class="callout"><line x1="504.1" y1="94" x2="504.1" y2="171.0"/><text x="504.1" y="90" text-anchor="start">Gainesville</text></g><g class="callout"><line x1="520.6" y1="112" x2="520.6" y2="154.0"/><text x="520.6" y="108" text-anchor="start">Bonham</text></g>
+</svg></div>
+      <figcaption>Distances run between ZIP centers. 18 ZIPs come from a published street address, 2 from a mailing address and 7 are the city center, because no street address was checked.</figcaption>
+    </figure>
+  </section>
+
+  <section aria-labelledby="who">
+    <h2 id="who">Who does what</h2>
+    <p>HubSpot is the record. Each of the other tools has one job and hands its result back to HubSpot.</p>
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Tools and their jobs">
+    <table class="jobs">
+      <thead><tr><th scope="col">Step</th><th scope="col">Tool</th><th scope="col">What happens</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Find</th><td>Research list, Marblism</td><td>New offices go into the companies file with a buying-unit ID, then into HubSpot by import. Nothing lands in HubSpot without that ID.</td></tr>
+        <tr><th scope="row">Write</th><td>Claude with the HubSpot connector</td><td>Drafts the first email from the company record: audience, unit type, session length. Keidrain approves it before it goes.</td></tr>
+        <tr><th scope="row">Send and log</th><td>Gmail connected to HubSpot</td><td>Mail goes out from Keidrain's own inbox, and sent mail and replies are logged on the contact.</td></tr>
+        <tr><th scope="row">Follow up</th><td>HubSpot</td><td>A sequence on Sales Hub Professional, or the same steps as dated tasks on Free or Starter. One owner per contact, so two tools never chase the same person.</td></tr>
+        <tr><th scope="row">Triage replies</th><td>Marblism</td><td>Sorts the inbox and drafts answers. HubSpot keeps the next follow-up.</td></tr>
+        <tr><th scope="row">Book</th><td>HubSpot pipelines</td><td>Event date, fee, deposit and procurement route sit on the deal, so a purchase order or a bid is tracked like a booking.</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="pipes">
+    <h2 id="pipes">Two pipelines, because a keynote and a contract close differently</h2>
+    <p>A speaking deal closes when the contract and deposit are in. An agency contract closes after vendor registration and procurement, which can take a full budget cycle. On HubSpot Free, which has no custom pipelines, both run in the default pipeline and a "Deal kind" property tells them apart.</p>
+    <div class="pipes">
+        <div class="pipe">
+          <h3>Speaking engagements</h3>
+          <ol><li class="open"><span class="stage">Researching</span><span class="prob"><span class="bar" style="--p:0.05"></span><span class="pct">5%</span></span></li><li class="open"><span class="stage">First contact</span><span class="prob"><span class="bar" style="--p:0.1"></span><span class="pct">10%</span></span></li><li class="open"><span class="stage">Conversation</span><span class="prob"><span class="bar" style="--p:0.25"></span><span class="pct">25%</span></span></li><li class="open"><span class="stage">Proposal sent</span><span class="prob"><span class="bar" style="--p:0.4"></span><span class="pct">40%</span></span></li><li class="open"><span class="stage">Date on hold</span><span class="prob"><span class="bar" style="--p:0.6"></span><span class="pct">60%</span></span></li><li class="open"><span class="stage">Contract out</span><span class="prob"><span class="bar" style="--p:0.8"></span><span class="pct">80%</span></span></li><li class="won"><span class="stage">Booked: contract and deposit</span><span class="prob"><span class="bar" style="--p:1"></span><span class="pct">100%</span></span></li><li class="lost"><span class="stage">Lost</span><span class="prob"><span class="bar" style="--p:0"></span><span class="pct">0%</span></span></li>
+          </ol>
+        </div>
+        <div class="pipe">
+          <h3>Institutional contracts</h3>
+          <ol><li class="open"><span class="stage">Researching</span><span class="prob"><span class="bar" style="--p:0.05"></span><span class="pct">5%</span></span></li><li class="open"><span class="stage">Discovery meeting</span><span class="prob"><span class="bar" style="--p:0.15"></span><span class="pct">15%</span></span></li><li class="open"><span class="stage">Program scoped</span><span class="prob"><span class="bar" style="--p:0.3"></span><span class="pct">30%</span></span></li><li class="open"><span class="stage">Proposal or bid submitted</span><span class="prob"><span class="bar" style="--p:0.5"></span><span class="pct">50%</span></span></li><li class="open"><span class="stage">Vendor registration and procurement</span><span class="prob"><span class="bar" style="--p:0.7"></span><span class="pct">70%</span></span></li><li class="won"><span class="stage">Contract signed</span><span class="prob"><span class="bar" style="--p:1"></span><span class="pct">100%</span></span></li><li class="lost"><span class="stage">Lost or no award</span><span class="prob"><span class="bar" style="--p:0"></span><span class="pct">0%</span></span></li>
+          </ol>
+        </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="tiers">
+    <h2 id="tiers">What each HubSpot plan allows</h2>
+    <div class="table-wrap" tabindex="0" role="region" aria-label="HubSpot plan limits">
+    <table class="tiers">
+      <thead><tr><th scope="col">Feature</th><th scope="col">Free</th><th scope="col">Starter</th><th scope="col">Professional</th></tr></thead>
+      <tbody>
+        <tr><th scope="row">Custom pipelines</th><td>0, default only</td><td>15</td><td>100</td></tr>
+        <tr><th scope="row">Sequences (automatic follow-up emails)</th><td>No</td><td>No</td><td>Yes, Sales or Service Hub</td></tr>
+        <tr><th scope="row">HubSpot connector for Claude</th><td colspan="3">Any plan, with a paid Claude plan</td></tr>
+      </tbody>
+    </table>
+    </div>
+    <p class="source">From HubSpot's own pages: <a href="https://knowledge.hubspot.com/object-settings/set-up-and-customize-pipelines">pipeline limits</a>, <a href="https://knowledge.hubspot.com/connected-email/sales-email-send-limits">sequences</a>, <a href="https://www.hubspot.com/claude/connector">Claude connector</a>. Pipeline counts are for seat-based accounts.</p>
+  </section>
+
+  <section aria-labelledby="cadence">
+    <h2 id="cadence">Follow-ups counted in business days</h2>
+    <p>5 touches over about 36 calendar days, then a quarterly check-in. They stop on a reply, a booked meeting, a new deal, an unsubscribe or bounce, or when the contact's next-touch owner is set to paused. Agencies close on federal holidays, so the steps skip weekends and those days. A plan written in calendar days puts 246 of 1,245 touches on a weekend or federal holiday, counted over every possible start day in 2027.</p>
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Cadence for a contact first emailed on Monday, November 22, 2027">
+    <table class="cad">
+      <caption>A first email on Monday, November 22, 2027, the week of Thanksgiving</caption>
+      <thead><tr><th scope="col">Business day</th><th scope="col">Step</th><th scope="col">This cadence</th><th scope="col">Counted in calendar days</th></tr></thead>
+      <tbody><tr><td>0</td><td>First email, drafted by Claude from the HubSpot record, approved and sent by Keidrain</td><td>Mon, Nov 22</td><td>Mon, Nov 22</td></tr><tr><td>3</td><td>Short reply-on-thread follow-up</td><td>Fri, Nov 26</td><td>Thu, Nov 25 <span class="flag">Thanksgiving Day</span></td></tr><tr><td>7</td><td>Call task in HubSpot, with the unit and audience on screen</td><td>Thu, Dec 2</td><td>Mon, Nov 29</td></tr><tr><td>14</td><td>One-page speaker sheet and a clip, sized to the audience</td><td>Mon, Dec 13</td><td>Mon, Dec 6</td></tr><tr><td>25</td><td>Close-the-loop email; contact moves to a quarterly check-in task</td><td>Wed, Dec 29</td><td>Fri, Dec 17</td></tr></tbody>
+    </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="kit">
+    <h2 id="kit">The kit</h2>
+    <p>Files ready for HubSpot. Each one passed the validator below.</p>
+    <ul class="files">
+      <li><a href="kit/companies.csv">companies.csv</a> the 27 units, with buying-unit ID, distance and source link</li>
+      <li><a href="kit/properties.json">properties.json</a> 20 custom properties for companies, contacts and deals</li>
+      <li><a href="kit/pipelines.json">pipelines.json</a> 8 and 7 stages with win probabilities</li>
+      <li><a href="kit/cadence.csv">cadence.csv</a> the follow-up steps</li>
+      <li><a href="kit/contacts_template.csv">contacts_template.csv</a> and <a href="kit/deals_template.csv">deals_template.csv</a> import headers</li>
+      <li><a href="kit/claude_prompts.md">claude_prompts.md</a> prompts that work from HubSpot records</li>
+      <li><a href="kit/setup.md">setup.md</a> the order to set it up in</li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="measured">
+    <h2 id="measured">Measured</h2>
+    <div class="table-wrap" tabindex="0" role="region" aria-label="Measured results">
+    <table class="measured">
+      <tbody>
+        <tr><th scope="row">Import on web domain</th><td>8 records, 19 rows rejected; importing the same file again updates 8 and rejects 19 again</td></tr>
+        <tr><th scope="row">Import on buying-unit ID</th><td>27 records, 0 rejected; importing again updates 27 and creates 0</td></tr>
+        <tr><th scope="row">Follow-up dates</th><td>0 of 1,245 on a weekend or federal holiday; 246 if counted in calendar days</td></tr>
+        <tr><th scope="row">Planted kit mistakes caught by the validator</th><td>18 of 18: bad property names, wrong field types, broken pipelines, URLs in the domain column, US-style dates</td></tr>
+        <tr><th scope="row">Planted code bugs caught by the tests</th><td>10 of 10, in the import model, holiday calendar and distance maths</td></tr>
+        <tr><th scope="row">Tests</th><td>14 of 14 pass</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="not">
+    <h2 id="not">Not measured</h2>
+    <ul class="plain">
+      <li>No live HubSpot portal. The import counts come from a model of HubSpot's published rules, not from a real import.</li>
+      <li>How HubSpot links a new contact when several companies share its email domain. The kit avoids relying on it.</li>
+      <li>Marblism's connection to HubSpot. I haven't seen your Marblism workspace.</li>
+      <li>Driving distances, and whether each office books outside speakers or buys programs.</li>
+      <li>Contacts. The list holds offices only, with no people or emails. Finding the right person at each office is part of the work.</li>
+      <li>Reply rates or bookings. Nothing has been sent.</li>
+    </ul>
+  </section>
+</main>
+<footer class="foot">
+  <p>Prepared by Santiago. Unit list checked on November 19, 2026; every row links to its public source in <a href="kit/companies.csv">companies.csv</a>.</p>
+</footer>
+<script src="app.js" defer></script>
+</body>
+</html>

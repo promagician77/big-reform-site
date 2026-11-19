@@ -1,0 +1,6 @@
+Business day,Channel,What happens
+0,email,"First email, drafted by Claude from the HubSpot record, approved and sent by Keidrain"
+3,email,Short reply-on-thread follow-up
+7,call,"Call task in HubSpot, with the unit and audience on screen"
+14,email,"One-page speaker sheet and a clip, sized to the audience"
+25,email,Close-the-loop email; contact moves to a quarterly check-in task
